@@ -1,4 +1,6 @@
-const weatherForecasts = [
+import React from 'react';
+
+  const weatherForecasts = [
   {
     day: 'Mon',
     img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-components-lab/assets/day.svg',
@@ -36,42 +38,18 @@ const weatherForecasts = [
   },
 ];
 
-const App = () => {
-  return (
-    <>
+const WeatherForecasts = () => ( 
+  <section>
     <h1>Local Weather</h1>
-    <section className="weather-forecast">
       {weatherForecasts.map((forecast, index) => (
-        <div key={index} className="forecast-item">
-          <img scr={forecast.img} alt={forecast.imgAlt} />
-          <div className="forecast-details">
-            <h3>{forecast.day}</h3>
-            <p>{forecast.conditions}</p>
-            <p>{forecast.time}</p>
+        <div key={index} className="">
+          <h2>{forecast.day}</h2>
+          <img src={forecast.img} alt={forecast.imgAlt} />
+          <p>{forecast.conditions}</p>
+          <p>{forecast.time}</p>
         </div>
-      </div>
       ))}
     </section>
   );
-}
 
-
-  return (
-    <div className="weather">
-      <h2>{forecast.day}</h2>
-      <img src={forecast.img} alt={forecast.imgAlt} />
-      <p><span>conditions: </span>{forecast.conditions}</p>
-      <p><span>time: </span>{forecast.time}</p>
-    </div>
-  );
-}
-
-return (
-<div className="WeatherIcon">
-  <img src={weatherForecast.img} alt={weatherForecast.imgAlt} />
-  <div classname="WeatherData">
-  <h3>{forecast.day}</h3>
-            <p>{forecast.conditions}</p>
-            <p>{forecast.time}</p>
-  </div>
-export default App
+  export default WeatherForecasts;

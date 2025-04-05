@@ -1,0 +1,29 @@
+import React from 'react';
+
+const weatherData = [
+    {
+      day: 'Mon',
+      conditions: 'sunny',
+      time: 'Morning',
+    },
+    {
+      day: 'Tue',
+      conditions: 'clear',
+      time: 'Night',
+    },
+    {
+      day: 'Wed',
+      conditions: 'stormy',
+      time: 'All Day',
+    },
+    {
+      day: 'Thu',
+      conditions: 'overcast',
+      time: 'Evening',
+    },
+    {
+      day: 'Fri',
+      conditions: 'cloudy',
+      time: 'Night',
+    },
+  ];
